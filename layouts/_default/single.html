@@ -1,4 +1,9 @@
 {{ define "main" }}
   {{ .Content }}
-  {{ .Next }}
+  {{ with .Next }}
+    <a href="{{.Permalink}}">Next chapter: {{ .Title }}</a></br>
+  {{ end }}
+  {{ with .Prev }}
+    <a href="{{.Permalink}}">Previous chapter: {{ .Title }}</a>
+  {{ end }}
 {{ end }}
