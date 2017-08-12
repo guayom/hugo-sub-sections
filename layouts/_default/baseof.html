@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+  <h1>{{ .Title }}</h1>
+  {{ block "main" . }}
+  {{ end }}
+  {{ .Kind }}
+</body>
+
+</html>
