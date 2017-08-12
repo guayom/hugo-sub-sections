@@ -1,0 +1,13 @@
+<ul>
+  {{ $sections := ($.Site.GetPage "section" "books").Sections }}
+  {{ range $sections }}
+    <li>
+      <a href="{{.Permalink}}">{{ .Title }}</a>
+      <ul>
+      {{ range .Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+      </ul>
+    </li>
+  {{ end }}
+</ul>

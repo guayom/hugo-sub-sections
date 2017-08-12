@@ -1,16 +1,3 @@
 {{ define "main" }}
   {{ .Content }}
-  <ul>
-    {{ $sections := (.Site.GetPage "section" .Section).Sections }}
-    {{ range $sections }}
-      <li>
-        <a href="{{.Permalink}}">{{ .Title }}</a>
-        <ul>
-        {{ range .Pages }}
-          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-        </ul>
-      </li>
-    {{ end }}
-  </ul>
 {{ end }}

@@ -1,0 +1,5 @@
+<ul>
+  {{ range (.Site.GetPage "section" "books" (index .Params 0)).Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
