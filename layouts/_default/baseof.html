@@ -8,7 +8,10 @@
   <h1>{{ .Title }}</h1>
   {{ block "main" . }}
   {{ end }}
-  {{ .Kind }}
+  <pre style="border: solid 1px #d9d9d9; padding: 0 10px 10px;">
+    <h3>Debug</h3>
+    Kind: {{ .Kind }}
+  </pre>
 </body>
 
 </html>
