@@ -1,3 +1,3 @@
-baseURL = "https://hugo-sub-sections.netlify.com"
+baseURL = "https://hugo-nested-sections.netlify.com"
 languageCode = "en-us"
 title = "Hugo Nested Sections Example"
